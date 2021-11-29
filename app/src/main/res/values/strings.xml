@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sanskritam</string>
+    <string name="basics">Basics</string>
+    <string name="shlokas">Shlokas</string>
+    <string name="vedas">Vedas</string>
+    <string name="modified_text">Hi! this is modified text in the ViewPager. Modified by set Text</string>
+</resources>
