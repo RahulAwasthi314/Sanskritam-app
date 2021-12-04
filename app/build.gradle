@@ -4,7 +4,9 @@ plugins {
 
 android {
     compileSdk 31
-
+    buildFeatures{
+        viewBinding true;
+    }
     defaultConfig {
         applicationId "com.awasthir.sanskritam"
         minSdk 25
@@ -27,7 +29,9 @@ android {
     }
 }
 
+
 dependencies {
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
     implementation 'androidx.viewpager:viewpager:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.4.0'

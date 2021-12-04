@@ -23,7 +23,7 @@ public class ProverbsFragment extends Fragment {
         final ArrayList<Word> Words = new ArrayList<>();
 
         Words.add(new Word("Dharma, when protected, protects", "धर्मो रक्षति रक्षितः"));
-        Words.add(new Word("Mother and Motherland are like heaven", "जननी जन्मभुमिस्छ स्वर्गादपि गरीयसि"));
+        Words.add(new Word("Mother and Motherland are like heaven", "जननी जन्मभुमिश्च स्वर्गादपि गरीयसि"));
         Words.add(new Word("During ones ruin his wisdom wouldn't pay off", "विनाश काले विपरीत बुद्धि"));
         Words.add(new Word("The underlings are quite a match to their leader", "यथा राज तथा प्रजा"));
         Words.add(new Word("Moderation should be exercised in everything", "अति सर्वत्र वर्जयेत्"));

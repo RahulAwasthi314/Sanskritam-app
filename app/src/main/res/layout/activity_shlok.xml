@@ -1,9 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShlokActivity">
+    tools:context=".ShlokActivity"
+    android:id="@+id/relative">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="1"
+        android:columnCount="2"
+        android:layout_below="@id/relative"
+        tools:ignore="NotSibling" >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_margin="15dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal | center_vertical"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/pdf_image_view"
+                    android:layout_width="120dp"
+                    android:layout_height="115dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:contentDescription="@string/app_name" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_margin="15dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal | center_vertical"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/pdf_image_view2"
+                    android:layout_width="120dp"
+                    android:layout_height="115dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:contentDescription="@string/app_name" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </GridLayout>
+
+
+
+
+</RelativeLayout>

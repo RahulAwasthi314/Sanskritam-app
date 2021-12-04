@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sanskritam">
         <activity
+            android:name=".PdfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShlokActivity"
+            android:exported="false" />
+        <activity
             android:name=".BasicsActivity"
             android:exported="false" />
         <activity
