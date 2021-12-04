@@ -1,5 +1,7 @@
 package com.awasthir.sanskritam;
 
+import android.media.AudioManager;
+
 public class Word {
 
     final int NO_IMAGE_PROVIDED = -1;
@@ -7,7 +9,7 @@ public class Word {
     private String mDefaultTranslation;
     private String mSanskritTranslation;
     private int mImageResourceId = NO_IMAGE_PROVIDED;
-
+    private int mAudioResourceId;
 
     public Word (String defaultTranslation, String sanskritTranslation) {
         setDefaultTranslation(defaultTranslation);
@@ -20,6 +22,14 @@ public class Word {
         mImageResourceId = imageResourceId;
     }
 
+    public Word (String defaultTranslation, String sanskritTranslation, int imageResourceId, int audioResourceId) {
+        setDefaultTranslation(defaultTranslation);
+        setSanskritTranslation(sanskritTranslation);
+        mImageResourceId = imageResourceId;
+        mAudioResourceId = audioResourceId;
+    }
+
+
     public void setDefaultTranslation (String defaultTranslation){
         mDefaultTranslation = defaultTranslation;
     }
@@ -30,6 +40,10 @@ public class Word {
 
     public int getImageResourceId() {
         return mImageResourceId;
+    }
+
+    public int getAudioResourceId() {
+        return mAudioResourceId;
     }
 
     public boolean hasImage() {
