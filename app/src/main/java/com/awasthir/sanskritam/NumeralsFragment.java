@@ -28,17 +28,17 @@ public class NumeralsFragment extends Fragment {
         // ARRAYLIST IS USED AS THE CONTAINER OF WORDS
         final ArrayList<Word> Words = new ArrayList<>();
 
-        Words.add(new Word("Zero", "शून्यम्"));
-        Words.add(new Word("One", "एकम्"));
-        Words.add(new Word("Two", "द्वे"));
-        Words.add(new Word("Three", "त्रीणि"));
-        Words.add(new Word("Four", "चत्वारि"));
-        Words.add(new Word("Five", "पञ्चम्"));
-        Words.add(new Word("Six", "षष्टम्"));
-        Words.add(new Word("Seven", "सप्तम्"));
-        Words.add(new Word("Eight", "अष्टम्"));
-        Words.add(new Word("Nine", "नवम्"));
-        Words.add(new Word("Ten", "दशम्"));
+        Words.add(new Word("Zero", "शून्यम्", R.drawable.number_zero));
+        Words.add(new Word("One", "एकम्", R.drawable.number_one));
+        Words.add(new Word("Two", "द्वे", R.drawable.number_two));
+        Words.add(new Word("Three", "त्रीणि", R.drawable.number_three));
+        Words.add(new Word("Four", "चत्वारि", R.drawable.number_four));
+        Words.add(new Word("Five", "पञ्चम्", R.drawable.number_five));
+        Words.add(new Word("Six", "षष्टम्", R.drawable.number_six));
+        Words.add(new Word("Seven", "सप्तम्", R.drawable.number_seven));
+        Words.add(new Word("Eight", "अष्टम्", R.drawable.number_eight));
+        Words.add(new Word("Nine", "नवम्", R.drawable.number_nine));
+        Words.add(new Word("Ten", "दशम्", R.drawable.number_ten));
 
         WordAdapter wordAdapter = new WordAdapter(requireActivity(), Words);
 
