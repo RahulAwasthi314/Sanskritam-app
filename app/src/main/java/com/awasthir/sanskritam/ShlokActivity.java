@@ -7,12 +7,16 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.util.Objects;
+
 public class ShlokActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shlok);
+
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         ImageView image_view = findViewById(R.id.pdf_image_view);
         image_view.setOnClickListener(v -> {
